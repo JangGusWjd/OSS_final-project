@@ -1,0 +1,93 @@
+{% load static %}
+<!-- <h1>home 파일 완성</h1>
+<img src="{% static 'home/image/이모지.png' %}" /> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장현정 django 이용한 홈페이지</title>
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="page_name">My HomePage</div>
+      <div class="page_details">
+        <div id="home">home</div>
+        <div id="introduction">self-introduction</div>
+        <div id="study">study</div>
+        <div id="project">project</div>
+        <div id="about">about</div>
+      </div>
+    </div>
+    <div id="self-introduction">Self-Introduction</div>
+    <div id="img-content">
+      <div id="first-layer">
+        <div id="img1">
+          <img
+            id="img-size"
+            src="{% static 'home/image/이미지2.jpg' %}"
+            alt="이미지"
+          />
+        </div>
+        <div id="content">
+          <p>
+            <span>장현정(Jang Hyeon Jeong)</span><br /><br />
+            학번: 32203928<br />
+            단국대학교 소프트웨어학과 재학<br />
+            오픈소스 SW 활용 2분반<br />
+            깃허브 주소: https://github.com/JangGusWjd<br />
+          </p>
+        </div>
+      </div>
+      <div id="second-layer">
+        <div id="img2">
+          <img
+            id="img-size"
+            src="{% static 'home/image/이미지1.jpg' %}"
+            alt="이미지"
+          />
+        </div>
+        <div id="img3">
+          <img
+            id="img-size"
+            src="{% static 'home/image/이모지.png' %}"
+            alt="이미지"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="video">
+      <div id="video-name">favorite video</div>
+      <div id="youtube">
+        <iframe
+          width="500"
+          height="315"
+          src="https://www.youtube.com/embed/3iM_06QeZi8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="500"
+          height="315"
+          src="https://www.youtube.com/embed/tANNOmdIwXs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="500"
+          height="315"
+          src="https://www.youtube.com/embed/0YDuRFw3qzo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
